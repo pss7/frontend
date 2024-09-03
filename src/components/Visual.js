@@ -17,7 +17,7 @@ export default function Visual() {
       <div className="container">
         <div className="section01">
           <div className="imgWrap">
-            <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} />
+            <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} className={imgActive} alt="" />
           </div>
           <div className="textWrap">
             <h2>
