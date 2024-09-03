@@ -12,7 +12,7 @@ export default function Skill() {
                     <ul className="skillList" data-aos="fade-up">
                         <li>
                             <div className="imgWrap">
-                                <img src="/images/html.png"></img>
+                                <img src={process.env.PUBLIC_URL + '/images/html.png'} alt="HTML" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -25,8 +25,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/css.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/css.png'} alt="CSS" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -39,8 +39,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/js.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/js.png'} alt="JavaScript" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -52,8 +52,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/ts.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/ts.png'} alt="TypeScript" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -65,8 +65,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/jq.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/jq.png'} alt="jQuery" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -78,8 +78,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/react.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/react.png'} alt="react" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -93,7 +93,7 @@ export default function Skill() {
                         </li>
                         <li>
                             <div className="imgWrap">
-                                <img src="/images/vue.png"></img>
+                            <img src={process.env.PUBLIC_URL + '/images/vue.png'} alt="vue" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -105,8 +105,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                            <div className="imgWrap">
-                                <img src="/images/node.png"></img>
+                        <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/node.png'} alt="node" />
                             </div>
                             <div className="textWrap">
                                 <h3>

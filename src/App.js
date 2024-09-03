@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./assets/css/fonts.css";
 import "./assets/css/reset.css";
@@ -13,7 +13,7 @@ import BoardWrite from "./components/BoardWrite";
 function App() {
   return (
 
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/boardlist' element={<BoardList />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path='/boardupdate/:id' element={<BoardUpdate />} />
         <Route path='/boardwrite' element={<BoardWrite />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
