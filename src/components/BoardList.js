@@ -11,7 +11,7 @@ export default function BoardList() {
     const offset = (page - 1) * limit;
 
     useEffect(() => {
-        fetch("http://localhost:3001/board")
+        fetch(`${process.env.REACT_APP_FRONTEND}/board`)
             .then(res =>
                 res.json()
             )
