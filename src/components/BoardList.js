@@ -11,7 +11,7 @@ export default function BoardList() {
     const offset = (page - 1) * limit;
 
     useEffect(() => {
-        fetch("http://localhost:3001/board//board")
+        fetch("http://localhost:3001/board/")
             .then(res =>
                 res.json()
             )
