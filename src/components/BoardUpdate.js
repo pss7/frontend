@@ -35,7 +35,7 @@ export default function BoardUpdate() {
         }).then(res => {
             if (res.ok) {
                 alert("등록완료");
-                navigate("/");
+                navigate("/boardlist");
             } else {
                 alert("오류 발생");
             }
@@ -91,7 +91,7 @@ export default function BoardUpdate() {
                     </div>
 
                     <div className="btnBox">
-                        <button className="btn">수정</button>
+                        <button className="btn" onClick={handleSubmit}>수정</button>
                         <button className="btn" onClick={cancellation}>취소</button>
                     </div>
 

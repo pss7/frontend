@@ -41,7 +41,7 @@ export default function BoardWrite() {
         }).then(res => {
             if (res.ok) {
                 alert("등록완료");
-                navigate("/");
+                navigate("/boardlist");
             };
         });
     };
@@ -88,7 +88,7 @@ export default function BoardWrite() {
                     </div>
 
                     <div className="btnBox">
-                        <button className="btn">저장</button>
+                        <button className="btn" onClick={onSubmit}>저장</button>
                         <Link className="btn" to="/boardlist">
                             목록
                         </Link>
