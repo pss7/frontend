@@ -13,9 +13,9 @@ export default function BoardList() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API}/board`, {
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
+                Accept: "application / json",
             },
+            method: "GET",
         })
             .then(res =>
                 res.json()
