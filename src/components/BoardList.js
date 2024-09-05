@@ -13,7 +13,7 @@ export default function BoardList() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_FRONTEND}/board`, {
             headers: {
-                Accept: "application / json",
+                Accept: "application/json",
             }
         })
             .then(res =>
