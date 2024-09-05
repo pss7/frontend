@@ -14,7 +14,8 @@ export default function BoardList() {
         fetch(`${process.env.REACT_APP_FRONTEND}/board`, {
             headers: {
                 Accept: "application/json",
-            }
+            },
+            method: "GET"
         })
             .then(res =>
                 res.json()
