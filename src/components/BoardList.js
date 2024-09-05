@@ -18,11 +18,10 @@ export default function BoardList() {
             },
             method: "GET"
         })
-            .then((res) => {
-                return res.json();
-            }
+            .then(res =>
+                res.json()
             )
-            .then((result) =>
+            .then(result =>
                 setBoardList(result)
             );
     }, [])
