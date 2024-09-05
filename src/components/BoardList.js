@@ -11,7 +11,7 @@ export default function BoardList() {
     const offset = (page - 1) * limit;
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_FRONTEND}/board`, {
+        fetch(`${process.env.REACT_APP_FRONTEND}/db`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
