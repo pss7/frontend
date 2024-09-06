@@ -1,14 +1,14 @@
-import { useRef, useState } from 'react';
-import { Link } from 'react-scroll';
+import { useState } from 'react';
+import { Link, scroller } from 'react-scroll';
 
 export default function Header() {
 
     const [menuToggle, setMobileToggle] = useState('');
-    const [mobileMenuLink, setmobileMenuLink] = useState('');
+    const [mobileMenu, setMobileMenu] = useState('');
 
     function handleMenuToggle() {
 
-        setmobileMenuLink('')
+        setMobileMenu('')
 
         if (menuToggle === '') {
             setMobileToggle('active');
@@ -18,11 +18,20 @@ export default function Header() {
 
     }
 
-    function handleLinkClick(section) {
+    function handleMobileClick(section) {
 
-        setmobileMenuLink(section);
+        setMobileMenu(section);
 
     }
+
+    function handleMenuClick(section) {
+        scroller.scrollTo(section, {
+            duration: 700,
+            delay: 0,
+            smooth: 'Ease',
+            offset: -50
+        });
+    };
 
     return (
         <header id="header">
@@ -32,22 +41,22 @@ export default function Header() {
                     <nav>
                         <ul className="menu">
                             <li>
-                                <Link to="section01" smooth={true} duration={700} >
+                                <Link to="section01" onClick={() => handleMenuClick('section01')}>
                                     HOME
                                 </Link>
                             </li>
                             <li>
-                                <Link to="section02" smooth={true} duration={700} >
+                                <Link to="section02" onClick={() => handleMenuClick('section02')}>
                                     SKILL
                                 </Link>
                             </li>
                             <li>
-                                <Link to="section03" smooth={true} duration={700} >
+                                <Link to="section03" onClick={() => handleMenuClick('section03')}>
                                     PORTFOLIO
                                 </Link>
                             </li>
                             <li>
-                                <Link to="section04" smooth={true} duration={700} >
+                                <Link to="section04" onClick={() => handleMenuClick('section04')}>
                                     CONTACT
                                 </Link>
                             </li>
@@ -65,29 +74,29 @@ export default function Header() {
                         <nav className="mobileNav">
                             <ul className="mobileMenu">
                                 <li>
-                                    <Link to="section01" className={mobileMenuLink === 'section01' ? 'active' : ''} onClick={() => {
-                                        handleLinkClick('section01');
+                                    <Link to="section01" className={mobileMenu === 'section01' ? 'active' : ''} onClick={() => {
+                                        handleMobileClick('section01');
                                     }} smooth={true} duration={700}>
                                         <span>HOME</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="section02" className={mobileMenuLink === 'section02' ? 'active' : ''} onClick={() => {
-                                        handleLinkClick('section02');
+                                    <Link to="section02" className={mobileMenu === 'section02' ? 'active' : ''} onClick={() => {
+                                        handleMobileClick('section02');
                                     }} smooth={true} duration={700}>
                                         <span>SKILL</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="section03" className={mobileMenuLink === 'section03' ? 'active' : ''} onClick={() => {
-                                        handleLinkClick('section03');
+                                    <Link to="section03" className={mobileMenu === 'section03' ? 'active' : ''} onClick={() => {
+                                        handleMobileClick('section03');
                                     }} smooth={true} duration={700}>
                                         <span>PORTFOLIO</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="section04" className={mobileMenuLink === 'section04' ? 'active' : ''} onClick={() => {
-                                        handleLinkClick('section04');
+                                    <Link to="section04" className={mobileMenu === 'section04' ? 'active' : ''} onClick={() => {
+                                        handleMobileClick('section04');
                                     }} smooth={true} duration={700}>
                                         <span>CONTACT</span>
                                     </Link>
