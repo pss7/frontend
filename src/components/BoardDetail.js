@@ -47,7 +47,7 @@ export default function BoardDetail() {
             }).then(res => {
                 if (res.ok) {
                     alert("삭제 되었습니다.");
-                    navigate("/");
+                    navigate("/boardlist");
                 }
             })
         };
