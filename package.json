@@ -16,12 +16,13 @@
     "react-scroll": "^1.9.0",
     "web-vitals": "^2.1.4"
   },
- "scripts": {
-    "start": "NODE_PATH=src react-scripts start",
-    "start:dev": "NODE_PATH=src node scripts/build.js",
-    "build": "NODE_PATH=src react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
