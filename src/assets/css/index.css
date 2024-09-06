@@ -1,7 +1,7 @@
 /* 공통 */
 #root,
 #root > div{ height: 100%;}
-main{/*margin-top: 50px;*/}
+
 .textLeft{text-align: left!important;}
 .btnBox{display: flex; gap: 0 5px;}
 .btn{display: inline-block; padding: 7px 20px; background-color: #4253ab; color: #fff; border-radius: 5px;}
@@ -45,8 +45,8 @@ main{/*margin-top: 50px;*/}
 #header{position: fixed; top:0; left:0; right: 0; background-color: #4253ab; z-index: 99999;}
 #header nav .menu{display: flex; gap: 0 70px; justify-content: flex-end;}
 #header nav .menu a{padding: 13px 8px; position: relative; display: block; font-size: 16px; color: #fff; font-weight: 500; cursor: pointer;}
-#header nav .menu a::before{content:''; position: absolute; left:0; bottom: 0; width: 0; height: 2px; background-color: #fff;}
-#header nav .menu a:hover::before{width: 100%; transition: all .3s;}
+#header nav .menu a::before{content:''; position: absolute; left:0; bottom: 0; width: 0; height: 2px; background-color: #fff; transition: all .3s;}
+#header nav .menu a:hover::before{width: 100%; }
 #header .mobileBtn{display: none;}
 #header .mobileMenuWrap{display: none;}
  
@@ -57,8 +57,13 @@ main{/*margin-top: 50px;*/}
 
 
   #header .mobileBg{display: none; position: fixed; top:0; left:0; right:0; bottom: 0; z-index: 9; background-color: rgba(0,0,0,.5);}
-  #header .mobileMenuWrap{display: block; position: fixed; top:0; right: -3000px; bottom: 0; padding-top: 62px; background-color: #4253ab; z-index: 999;}
+  #header .mobileBg.active{display: block;}
+  #header .mobileMenuWrap{display: block; position: fixed; top:0; right: -3000px; bottom: 0; padding-top: 62px; background-color: #4253ab; z-index: 999; transition:  all .3s;}
+  #header .mobileMenuWrap.active{right:0;}
   #header .mobileMenuWrap .mobileMenu li a{display: block; padding: 15px 120px 15px 38px; color: #fff;}
+  #header .mobileMenuWrap .mobileMenu li a span{position: relative; padding: 0 5px 5px;}
+  #header .mobileMenuWrap .mobileMenu li a span::before{content:''; position: absolute; left:0; bottom: 0; width: 0; height: 2px; background-color: #fff; transition: all .3s;}
+  #header .mobileMenuWrap .mobileMenu li a.active span::before{width: 100%;}
   #header .mobileNav{display: block;}
   #header .mobileBtn{display: block;}
   #header .mobileBtn span{display: block; margin: 5px 0; width: 26px; height: 3px; background-color: #fff; border-radius: 50px;}
@@ -249,12 +254,12 @@ main{/*margin-top: 50px;*/}
 }
 
 /* section04 */
-#section04{padding: 55px 0 0; /*background: linear-gradient(to right, #304ca1, #4253ab);*/} /* 153289, 2246b3, 2246b3 */
+#section04{padding: 100px 0 0; /*background: linear-gradient(to right, #304ca1, #4253ab);*/} /* 153289, 2246b3, 2246b3 */
 #section04 .contactWrap{display: flex;}
 #section04 .contactWrap .InfoWrap{padding: 93px 20px 0 100px; width: 850px; background-color: #4253ab;}
 #section04 .contactWrap .InfoWrap h3{margin-bottom: 16px; color: #fff; text-align: left; font-size: 33px;}
 #section04 .contactWrap .InfoWrap .infoText p{margin-bottom: 10px; color: #fff; text-align: left; font-weight: 700; font-size: 25px;}
-#section04 .contactWrap .inquiryWrap{position: relative; padding: 100px 50px 73px; width: 100%; background: url(/public/images/tit_bg.jpg)no-repeat center; background-size: cover;}
+#section04 .contactWrap .inquiryWrap{position: relative; padding: 100px 50px 199px; width: 100%; background: url(/public/images/tit_bg.jpg)no-repeat center; background-size: cover;}
 #section04 .contactWrap .inquiryWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(66, 83, 171, .1);}
 #section04 .title{margin:0 0 50px; text-align: left;}
 #section04 .title span{color: #fff; font-size: 60px;}
@@ -301,7 +306,7 @@ main{/*margin-top: 50px;*/}
 .boardWrap{margin: 20px 0 30px;}
 .boardListWrap{border-top: 2px solid #000;}
 .boardListWrap .boardList{width: 100%;}
-.boardListWrap .boardList th{padding: 15px 10px; border-bottom: 1px solid #000;  font-weight: 500;}
+.boardListWrap .boardList th{padding: 15px 10px; border-bottom: 1px solid #000;  font-weight: 500; white-space: nowrap;}
 .boardListWrap .boardList tr{border-bottom: 1px solid #ccc;}
 .boardListWrap .boardList td{padding: 15px 10px; text-align: center;}
 .boardDetailWrap .boardDetailTop{padding: 30px 0; border-top: 1px solid #000; border-bottom: 1px solid #ccc; text-align: center;}

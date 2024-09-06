@@ -9,7 +9,7 @@ export default function BoardWrite() {
     function onSubmit(e) {
         e.preventDefault();
 
-        if (titleRef.current.value.length === 0 && contentRef.current.value.length === 0 && writerRef.current.value.length === 0) {
+        if (titleRef.current.value.length === 0 && contentRef.current.value.length === 0 && authorRef.current.value.length === 0) {
             alert("빈 칸을 입력해주세요.");
             return false;
         }
@@ -21,7 +21,7 @@ export default function BoardWrite() {
             alert("내용을 입력해주세요");
             return false;
         }
-        if (writerRef.current.value.length === 0) {
+        if (authorRef.current.value.length === 0) {
             alert("작성자를 입력해주세요")
             return false;
         }
@@ -36,7 +36,7 @@ export default function BoardWrite() {
                 content: contentRef.current.value,
                 date: new Date().toLocaleDateString(),
                 viewCount: 0,
-                writer: writerRef.current.value
+                writer: authorRef.current.value
             }),
         }).then(res => {
             if (res.ok) {
@@ -48,7 +48,7 @@ export default function BoardWrite() {
 
     const titleRef = useRef(null);
     const contentRef = useRef(null);
-    const writerRef = useRef(null);
+    const authorRef = useRef(null);
 
     return (
         <>
@@ -67,7 +67,7 @@ export default function BoardWrite() {
                                 <label htmlFor="writer">
                                     작성자
                                 </label>
-                                <input id="writer" type="text" ref={writerRef} />
+                                <input id="writer" type="text" ref={authorRef} />
                             </div>
                             <div className="boardBox">
                                 <label htmlFor="title">
