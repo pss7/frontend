@@ -13,13 +13,13 @@ export default function BoardDetail() {
         const boardDetailView = async () => {
             try {
 
-                const response = await fetch(`http://localhost:3001/board/${id}`);
+                const response = await fetch(`${process.env.REACT_APP_API}/board/${id}`);
                 const board = await response.json();
 
                 setBoardDetail(board)
 
 
-                await fetch(`http://localhost:3001/board/${id}`, {
+                await fetch(`${process.env.REACT_APP_API}/board/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
@@ -27,7 +27,7 @@ export default function BoardDetail() {
                     body: JSON.stringify({ viewCount: board.viewCount + 1 })
                 });
 
-                const updateResponse = await fetch(`http://localhost:3001/board/${id}`);
+                const updateResponse = await fetch(`${process.env.REACT_APP_API}/board/${id}`);
                 const updatePost = await updateResponse.json();
                 setBoardDetail(updatePost)
 
@@ -42,7 +42,7 @@ export default function BoardDetail() {
 
     function del() {
         if (window.confirm("삭제 하시겠습니까?")) {
-            fetch(`http://localhost:3001/board/${id}`, {
+            fetch(`${process.env.REACT_APP_API}/board/${id}`, {
                 method: "DELETE",
             }).then(res => {
                 if (res.ok) {

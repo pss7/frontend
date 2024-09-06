@@ -10,7 +10,7 @@ export default function BoardUpdate() {
     console.log(board)
 
     useEffect(() => {
-        fetch(`http://localhost:3001/board/${id}`)
+        fetch(`${process.env.REACT_APP_API}/board/${id}`)
             .then(res => res.json())
             .then(result => setBoard(result))
 
@@ -26,7 +26,7 @@ export default function BoardUpdate() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:3001/board/${id}`, {
+        fetch(`${process.env.REACT_APP_API}/board/${id}`, {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json",

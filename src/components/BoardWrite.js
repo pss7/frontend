@@ -26,7 +26,7 @@ export default function BoardWrite() {
             return false;
         }
 
-        fetch("http://localhost:3001/board", {
+        fetch(`${process.env.REACT_APP_API}/board`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
