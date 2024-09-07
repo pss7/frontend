@@ -60,7 +60,7 @@
   #header .mobileBg.active{display: block;}
   #header .mobileMenuWrap{display: block; position: fixed; top:0; right: -3000px; bottom: 0; padding-top: 62px; background-color: #4253ab; z-index: 999; transition:  all .3s;}
   #header .mobileMenuWrap.active{right:0;}
-  #header .mobileMenuWrap .mobileMenu li a{display: block; padding: 15px 120px 15px 38px; color: #fff;}
+  #header .mobileMenuWrap .mobileMenu li a{display: block; padding: 15px 120px 15px 38px; color: #fff; font-weight: 500;}
   #header .mobileMenuWrap .mobileMenu li a span{position: relative; padding: 0 5px 5px;}
   #header .mobileMenuWrap .mobileMenu li a span::before{content:''; position: absolute; left:0; bottom: 0; width: 0; height: 2px; background-color: #fff; transition: all .3s;}
   #header .mobileMenuWrap .mobileMenu li a.active span::before{width: 100%;}
@@ -157,10 +157,10 @@
 }
 
 /* section3 */
-#section03{position: relative; padding: 0 0 480px; overflow: hidden;}
-#section03 .textEffect01{bottom: 155px; animation: textEffect02 23s linear infinite;}
+#section03{position: relative; padding: 0 0 570px; overflow: hidden;}
+#section03 .textEffect01{bottom: 238px; animation: textEffect02 23s linear infinite;}
 #section03 .textEffect01 p{color: #4253ab;}
-#section03 .textEffect02{bottom: 0; animation: textEffect03 23s linear infinite;}
+#section03 .textEffect02{bottom: 80px; animation: textEffect03 23s linear infinite;}
 #section03 .textEffect02 p{color: #fff; text-shadow: -1px 0px #333, 0px 1px #333, 1px 0px #333, 0px -1px #333;}
 #section03 .textEffect{width: 4500px; display: flex; position: absolute; text-align: center;}
 #section03 .textEffect p{font-weight: 700; font-size: 130px; line-height: 1; letter-spacing: -1px; /*text-shadow: 7px 7px 10px rgba(0, 0, 0, .2);*/ width: 1500px;}
@@ -206,14 +206,15 @@
 
 @media (max-width: 1024px){
 
-  #section03{padding: 0 0 280px;}
+  #section03{padding: 0 0 338px;}
   #section03 .portfolioTop{height: 437px;}
   #section03 .portfolioTop .textWrap p{font-size: 42px;}
   #section03 .portfolioTop .textWrap .text02{font-size: 20px;}
   #section03 .section03{padding-top: 85px;}
   #section03 .textEffect{width: 2790px;}
   #section03 .textEffect p{width: 930px; font-size: 80px;}
-  #section03 .textEffect01{bottom: 95px;}
+  #section03 .textEffect01{bottom: 130px;}
+  #section03 .textEffect02{bottom: 38px;}
   
   @keyframes textEffect02 {
     0%{
@@ -254,12 +255,12 @@
 }
 
 /* section04 */
-#section04{padding: 100px 0 0; /*background: linear-gradient(to right, #304ca1, #4253ab);*/} /* 153289, 2246b3, 2246b3 */
+#section04{/*padding: 100px 0 0;/ /*background: linear-gradient(to right, #304ca1, #4253ab);*/} /* 153289, 2246b3, 2246b3 */
 #section04 .contactWrap{display: flex;}
-#section04 .contactWrap .InfoWrap{padding: 93px 20px 0 100px; width: 850px; background-color: #4253ab;}
+#section04 .contactWrap .InfoWrap{padding: 160px 20px 0 100px; width: 850px; background-color: #4253ab;}
 #section04 .contactWrap .InfoWrap h3{margin-bottom: 16px; color: #fff; text-align: left; font-size: 33px;}
 #section04 .contactWrap .InfoWrap .infoText p{margin-bottom: 10px; color: #fff; text-align: left; font-weight: 700; font-size: 25px;}
-#section04 .contactWrap .inquiryWrap{position: relative; padding: 100px 50px 199px; width: 100%; background: url(/public/images/tit_bg.jpg)no-repeat center; background-size: cover;}
+#section04 .contactWrap .inquiryWrap{position: relative; padding: 167px 50px 199px; width: 100%; background: url(/public/images/tit_bg.jpg)no-repeat center; background-size: cover;}
 #section04 .contactWrap .inquiryWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(66, 83, 171, .1);}
 #section04 .title{margin:0 0 50px; text-align: left;}
 #section04 .title span{color: #fff; font-size: 60px;}
@@ -280,7 +281,7 @@
 
   #section04 .contactWrap .InfoWrap h3{font-size: 28px;}
   #section04 .contactWrap .InfoWrap .infoText p{font-size: 22px;}
-  #section04 .contactWrap .InfoWrap{padding: 93px 20px 0 50px; width: 450px;}
+  #section04 .contactWrap .InfoWrap{padding: 160px 20px 0 50px; width: 450px;}
   #section04 .title span::before{top:3px;}
 
 }
@@ -295,7 +296,7 @@
   #section04 .contactWrap .InfoWrap .infoText p,
   #section04 .title{text-align: center;}
   #section04 .title{ margin: 0 0 35px;}
-  #section04 .contactWrap .inquiryWrap{padding: 80px 20px 70px;}
+  #section04 .contactWrap .inquiryWrap{padding: 72px 20px 70px;}
  
 }
 

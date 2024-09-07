@@ -18,13 +18,10 @@ export default function Header() {
 
     }
 
-    function handleMobileClick(section) {
+    function handleMenuClick(section) {
 
         setMobileMenu(section);
 
-    }
-
-    function handleMenuClick(section) {
         scroller.scrollTo(section, {
             duration: 700,
             delay: 0,
@@ -75,29 +72,29 @@ export default function Header() {
                             <ul className="mobileMenu">
                                 <li>
                                     <Link to="section01" className={mobileMenu === 'section01' ? 'active' : ''} onClick={() => {
-                                        handleMobileClick('section01');
-                                    }} smooth={true} duration={700}>
+                                        handleMenuClick('section01');
+                                    }}>
                                         <span>HOME</span>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="section02" className={mobileMenu === 'section02' ? 'active' : ''} onClick={() => {
-                                        handleMobileClick('section02');
-                                    }} smooth={true} duration={700}>
+                                        handleMenuClick('section02');
+                                    }}>
                                         <span>SKILL</span>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="section03" className={mobileMenu === 'section03' ? 'active' : ''} onClick={() => {
-                                        handleMobileClick('section03');
-                                    }} smooth={true} duration={700}>
+                                        handleMenuClick('section03');
+                                    }}>
                                         <span>PORTFOLIO</span>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="section04" className={mobileMenu === 'section04' ? 'active' : ''} onClick={() => {
-                                        handleMobileClick('section04');
-                                    }} smooth={true} duration={700}>
+                                        handleMenuClick('section04');
+                                    }}>
                                         <span>CONTACT</span>
                                     </Link>
                                 </li>
