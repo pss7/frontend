@@ -23,9 +23,9 @@ export default function Header() {
         setMobileMenu(section);
 
         scroller.scrollTo(section, {
-            duration: 700,
+            duration: 900,
             delay: 0,
-            smooth: 'Ease',
+            smooth: 'easeOut',
             offset: -50
         });
     };
