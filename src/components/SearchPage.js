@@ -23,7 +23,7 @@ export default function SearchPage() {
                         검색결과 <span>{searchData.length}</span>건
                     </h1>
                     {
-                        searchData > 0 ? (
+                        searchData.length > 0 ? (
                             <ul>
                                 {
                                     searchData.map(data => (
