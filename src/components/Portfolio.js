@@ -35,7 +35,7 @@ export default function Portfolio() {
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to="/search" target="_blank">
                 <div className="imgWrap">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>
@@ -47,7 +47,7 @@ export default function Portfolio() {
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to="#" target="_blank">
                 <div className="imgWrap">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>

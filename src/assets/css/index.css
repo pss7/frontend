@@ -1,14 +1,11 @@
 /* 공통 */
-#root,
-#root > div{ height: 100%;}
-
 .textLeft{text-align: left!important;}
 .btnBox{display: flex; gap: 0 5px;}
 .btn{display: inline-block; padding: 7px 20px; background-color: #4253ab; color: #fff; border-radius: 5px;}
 .contentWrap{padding: 100px 0;}
 
 /* 공통 - 제목 */
-.contentWrap h1{padding: 30px 0 50px; text-align: center;}
+.contentWrap h1{margin: 30px 0 90px; text-align: center;}
 .title{margin: 50px 0 170px; text-align: center;}
 .title span{position: relative; font-size: 40px; font-weight: 700;}
 .title span::before{content: ''; position: absolute; top:3px; left:-12px; width: 10px; height: 10px; background-color: #4253ab; border-radius: 50%;}
@@ -324,3 +321,17 @@
 .paginationWrap .prev{width: auto; margin-right: 7px;}
 .paginationWrap .next{width: auto; margin-left: 7px;}
 .paginationWrap .paginationBtn{font-size: 15px;}
+
+/* search */
+.searchWrap{padding: 58px 30px 80px; width: 750px; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; background-color: #2e54a9;}
+.searchWrap .searchBox{position: relative; display: flex; align-items: center; justify-content: center; gap: 0 30px;}
+.searchWrap .searchBox input{width: 100%; height: 72px; padding: 20px 72px 20px 20px; background-color: transparent; border: 0; font-size: 18px; border-bottom: 1px solid #fff; color: #fff; font-weight: 500;}
+.searchWrap .searchBox input::placeholder{color: #fff; font-weight: 500;}
+.searchWrap .searchBox button{height: 72px; padding: 20px; position: absolute; top:0; bottom: 0; right:0; color: #fff; font-size: 18px;}
+.searchWrap .searchBox select{height: 72px; padding: 20px 10px; background: 0; border: 0; color: #fff; font-weight: 500; cursor: pointer; border-bottom: 1px solid #fff; font-size: 18px;}
+.searchWrap .searchBox select option{color: #333; font-weight: 500; font-size: 18px;}
+.searchResultWrap h1 span{color: #4253ab;}
+.searchResultWrap .imgBox{max-width: 500px; margin: 0 auto 60px;}
+.searchResultWrap .imgBox img{display: block; width: 100%;}
+.searchResultWrap .textBox{text-align: center;}
+.searchResultWrap .noData{font-size: 18px; font-weight: 500; text-align: center;}
