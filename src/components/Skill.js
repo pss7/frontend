@@ -25,7 +25,7 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
+                            <div className="imgWrap">
                                 <img src={process.env.PUBLIC_URL + '/images/css.png'} alt="CSS" />
                             </div>
                             <div className="textWrap">
@@ -39,12 +39,12 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
+                            <div className="imgWrap">
                                 <img src={process.env.PUBLIC_URL + '/images/js.png'} alt="JavaScript" />
                             </div>
                             <div className="textWrap">
                                 <h3>
-                                    JS
+                                    JavaScript
                                 </h3>
                                 <p>
                                     JavaScript를 활용한 기능 구현
@@ -52,12 +52,12 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
+                            <div className="imgWrap">
                                 <img src={process.env.PUBLIC_URL + '/images/ts.png'} alt="TypeScript" />
                             </div>
                             <div className="textWrap">
                                 <h3>
-                                    TS
+                                    TypeScript
                                 </h3>
                                 <p>
                                     TypeScript
@@ -65,12 +65,12 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
+                            <div className="imgWrap">
                                 <img src={process.env.PUBLIC_URL + '/images/jq.png'} alt="jQuery" />
                             </div>
                             <div className="textWrap">
                                 <h3>
-                                    JQ
+                                    jQuery
                                 </h3>
                                 <p>
                                     jQuery를 활용한 기능 구현
@@ -78,8 +78,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
-                                <img src={process.env.PUBLIC_URL + '/images/react.png'} alt="react" />
+                            <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/react.png'} alt="React" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -93,7 +93,7 @@ export default function Skill() {
                         </li>
                         <li>
                             <div className="imgWrap">
-                            <img src={process.env.PUBLIC_URL + '/images/vue.png'} alt="vue" />
+                                <img src={process.env.PUBLIC_URL + '/images/vue.png'} alt="Vue" />
                             </div>
                             <div className="textWrap">
                                 <h3>
@@ -105,8 +105,8 @@ export default function Skill() {
                             </div>
                         </li>
                         <li>
-                        <div className="imgWrap">
-                                <img src={process.env.PUBLIC_URL + '/images/node.png'} alt="node" />
+                            <div className="imgWrap">
+                                <img src={process.env.PUBLIC_URL + '/images/node.png'} alt="Node" />
                             </div>
                             <div className="textWrap">
                                 <h3>

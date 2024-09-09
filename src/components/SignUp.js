@@ -22,27 +22,25 @@ export default function Register() {
         }
 
         try {
-            const responce = await fetch("http://localhost:3001/user", {
+            const responce = await fetch(`${process.env.REACT_APP_API}/user`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    email: email,
                     name: name,
-                    nickName: nickName,
-                    phoneNumber: phoneNumber,
+                    email: email,
                     password: password,
                     role: role,
                 })
             });
 
-            const result = await responce.json();
+            // const result = await responce.json();
 
             if (responce.status === 201) {
                 console.log("회원가입 성공");
                 navigate("/signin");
-            } else if (responce === 400) {
+            } else if (responce.status === 400) {
                 console.log("회원가입 실패");
             }
         }
@@ -90,18 +88,6 @@ export default function Register() {
 
                             <div className="box">
                                 <label>
-                                    전화번호
-                                </label>
-                                <input
-                                    type="text"
-                                    onChange={(e) =>
-                                        setPhoneNumber(e.target.value)
-                                    }
-                                />
-                            </div>
-
-                            <div className="box">
-                                <label>
                                     비밀번호
                                 </label>
                                 <input
@@ -120,18 +106,6 @@ export default function Register() {
                                     type="password"
                                     onChange={(e) =>
                                         setConfirmPassword(e.target.value)
-                                    }
-                                />
-                            </div>
-
-                            <div className="box">
-                                <label>
-                                    닉네임
-                                </label>
-                                <input
-                                    type="text"
-                                    onChange={(e) =>
-                                        setNickName(e.target.value)
                                     }
                                 />
                             </div>
