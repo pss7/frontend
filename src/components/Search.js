@@ -16,26 +16,32 @@ export default function Search() {
     }
 
     return (
-        <div className="searchWrap">
-            <form>
+        <div className="contentWrap searchWrap">
+            <div className="container">
                 <div className="searchBox">
-                    <input
-                        type="search"
-                        placeholder="검색어 입력"
-                        value={serach}
-                        onChange={e => setSearch(e.target.value)}
-                        onKeyDown={e => {
-                            if (e.key == "Enter") {
-                                handleSearch();
-                            }
-                        }}
-                    />
-                    <button type="submit">
-                        검색
-                    </button>
+                    <div className="search">
+                        <form>
+                            <div className="box">
+                                <input
+                                    type="search"
+                                    placeholder="검색어 입력"
+                                    value={serach}
+                                    onChange={e => setSearch(e.target.value)}
+                                    onKeyDown={e => {
+                                        if (e.key == "Enter") {
+                                            handleSearch();
+                                        }
+                                    }}
+                                />
+                                <button type="submit">
+                                    검색
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-        </div>
+            </div>
+        </div >
     )
 
 }

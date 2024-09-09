@@ -323,13 +323,16 @@
 .paginationWrap .paginationBtn{font-size: 15px;}
 
 /* search */
-.searchWrap{padding: 58px 30px 80px; width: 750px; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; background-color: #2e54a9;}
-.searchWrap .searchBox{position: relative; display: flex; align-items: center; justify-content: center; gap: 0 30px;}
-.searchWrap .searchBox input{width: 100%; height: 72px; padding: 20px 72px 20px 20px; background-color: transparent; border: 0; font-size: 18px; border-bottom: 1px solid #fff; color: #fff; font-weight: 500;}
-.searchWrap .searchBox input::placeholder{color: #fff; font-weight: 500;}
-.searchWrap .searchBox button{height: 72px; padding: 20px; position: absolute; top:0; bottom: 0; right:0; color: #fff; font-size: 18px;}
-.searchWrap .searchBox select{height: 72px; padding: 20px 10px; background: 0; border: 0; color: #fff; font-weight: 500; cursor: pointer; border-bottom: 1px solid #fff; font-size: 18px;}
-.searchWrap .searchBox select option{color: #333; font-weight: 500; font-size: 18px;}
+.searchWrap{height: 100vh;}
+.searchWrap .container{position: relative; height: 100%;}
+.searchWrap .searchBox{display: flex; align-items: center; justify-content: center; height: 100%; }
+.searchWrap .search{padding: 58px 30px 80px; width: 700px; border-radius: 10px; background-color: #2e54a9;}
+.searchWrap .search .box{position: relative; display: flex; align-items: center; justify-content: center; gap: 0 30px;}
+.searchWrap .search .box input{width: 100%; height: 72px; padding: 20px 72px 20px 20px; background-color: transparent; border: 0; font-size: 18px; border-bottom: 1px solid #fff; color: #fff; font-weight: 500;}
+.searchWrap .search .box input::placeholder{color: #fff; font-weight: 500;}
+.searchWrap .search .box button{height: 72px; padding: 20px; position: absolute; top:0; bottom: 0; right:0; color: #fff; font-size: 18px;}
+.searchWrap .search .box select{height: 72px; padding: 20px 10px; background: 0; border: 0; color: #fff; font-weight: 500; cursor: pointer; border-bottom: 1px solid #fff; font-size: 18px;}
+.searchWrap .search .box select option{color: #333; font-weight: 500; font-size: 18px;}
 .searchResultWrap h1 span{color: #4253ab;}
 .searchResultWrap .imgBox{max-width: 500px; margin: 0 auto 60px;}
 .searchResultWrap .imgBox img{display: block; width: 100%;}
