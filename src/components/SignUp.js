@@ -64,7 +64,7 @@ export default function Register() {
 
                             <div className="box">
                                 <label>
-                                    사용자명
+                                    이름
                                 </label>
                                 <input
                                     type="text"
