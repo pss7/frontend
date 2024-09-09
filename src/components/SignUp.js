@@ -7,8 +7,6 @@ export default function Register() {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-    const [nickName, setNickName] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
     const [role, setRole] = useState("");
 
     const navigate = useNavigate();
