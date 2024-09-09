@@ -47,6 +47,18 @@ export default function Portfolio() {
               </Link>
             </li>
             <li>
+              <Link to="/signin" target="_blank">
+                <div className="imgWrap">
+                  <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    회원가입, 로그인, 로그아웃
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
               <Link to="#" target="_blank">
                 <div className="imgWrap">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />

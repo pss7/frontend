@@ -11,6 +11,8 @@ import BoardUpdate from "./components/BoardUpdate";
 import BoardWrite from "./components/BoardWrite";
 import Search from "./components/Search";
 import SearchPage from "./components/SearchPage";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/boardwrite' element={<BoardWrite />} />
         <Route path='/search' element={<Search />} />
         <Route path='/searchpage/:searchId' element={<SearchPage />} />
+        <Route path='/signin' element={<SignIn />} />
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
     </HashRouter>
 
