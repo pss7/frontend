@@ -13,10 +13,20 @@ import Search from "./components/Search";
 import SearchPage from "./components/SearchPage";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
 
+  const [loginStatus, setLoginStatus] = useState(false);
+
+  useEffect(() => {
+
+    const email = localStorage.getItem('email');
+    setLoginStatus(!!email);
+
+  }, [])
+
+  return (
     <HashRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,11 +36,11 @@ function App() {
         <Route path='/boardwrite' element={<BoardWrite />} />
         <Route path='/search' element={<Search />} />
         <Route path='/searchpage/:searchId' element={<SearchPage />} />
+        
         <Route path='/signin' element={<SignIn />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
-    </HashRouter>
-
+    </HashRouter >
   );
 }
 

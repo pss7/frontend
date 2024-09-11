@@ -31,7 +31,7 @@ export default function Login() {
     const handleLogin = async function (e) {
         e.preventDefault();
 
-        if (!email || !emailCheck || !password || !passwordCheck) {
+        if (!valid) {
             return;
         }
 
