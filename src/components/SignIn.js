@@ -4,42 +4,38 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [loginCheck, setLoginCheck] = useState(false);
-
     const navigate = useNavigate();
+
+    const [email, setEmail] = useState("");
+    const [emailCheck, setEmailCheck] = useState(false);
+    const [password, setPassword] = useState("");
+    const [passwordCheck, setPasswordCheck] = useState(false);
+    const valid = email && emailCheck && password && passwordCheck;
+
+    const handelEmail = function (e) {
+        const email = e.target.value;
+        setEmail(email);
+
+        const regex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+        setEmailCheck(regex.test(email));
+    }
+
+    const handlePassword = function (e) {
+        const password = e.target.value;
+        setPassword(password);
+
+        const regex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-Z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/;
+        setPasswordCheck(regex.test(password));
+    }
 
     const handleLogin = async function (e) {
         e.preventDefault();
 
-        /*
-        const responce = await fetch(`http://localhost:3001/user`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                email: email,
-                password: password,
-            })
-        });
-        */
+        if (!email || !emailCheck || !password || !passwordCheck) {
+            return;
+        }
 
-        /*
-        const responce = await fetch(`http://localhost:3001/user`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                email: email,
-                password: password,
-            })
-        });
-        */
-
-        const responce = await fetch("http://localhost:3001/user", {
+        const responce = await fetch(`${process.env.REACT_APP_API}/user`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -51,26 +47,12 @@ export default function Login() {
         const user = result.find(user => user.email === email && user.password === password);
 
         if (user) {
-            sessionStorage.setItem("email", user.email);
-            sessionStorage.setItem("role", user.role);
+            localStorage.setItem("email", user.email);
             console.log("로그인성공");
             navigate("/");
         } else {
             console.log("로그인실패");
-            setLoginCheck(true);
         }
-
-        /*
-        if (responce.status === 200) {
-            sessionStorage.setItem("email", result.email);
-            sessionStorage.setItem("role", result.role);
-            console.log("로그인성공");
-            navigate("/");
-        } else {
-            console.log("로그인실패");
-            setLoginCheck(true);
-        }
-        */
 
     }
 
@@ -91,8 +73,17 @@ export default function Login() {
                                 <input
                                     id="email"
                                     type="text"
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={email}
+                                    onChange={handelEmail}
                                 />
+
+                                {
+                                    !emailCheck && email.length > 0 && (
+                                        <p className="errorMessage">
+                                            올바른 이메일 형식이 아닙니다.
+                                        </p>
+                                    )
+                                }
                             </div>
 
                             <div className="box">
@@ -102,17 +93,24 @@ export default function Login() {
                                 <input
                                     id="password"
                                     type="password"
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    value={password}
+                                    onChange={handlePassword}
                                 />
+                                {/* {
+                                    password && password.length === 0 && (
+                                        <p className="errorMessage">
+                                            비밀빈호를 입력해주세요.
+                                        </p>
+                                    )
+                                } */}
+                                {
+                                    !passwordCheck && password.length > 0 && (
+                                        <p className="errorMessage">
+                                            비밀번호를 정확하게 입력해주세요.
+                                        </p>
+                                    )
+                                }
                             </div>
-
-                            {
-                                loginCheck &&
-                                <p className="errText">
-                                    이메일 혹은 비밀번호가 틀립니다.
-                                </p>
-                            }
-
                             <ul className="loginLinkWrap">
                                 <li>
                                     <Link to="#">아이디/비밀번호 찾기</Link>
@@ -122,7 +120,7 @@ export default function Login() {
                                 </li>
                             </ul>
 
-                            <button type="submit" className="btn">
+                            <button type="submit" className="btn" disabled={!valid}>
                                 로그인
                             </button>
 

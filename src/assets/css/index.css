@@ -1,10 +1,10 @@
 /* 공통 */
 #root{height: 100%;}
-.contentWrap{min-height: 100%;}
+.contentWrap{min-height: 100%; padding: 100px 0;}
 .textLeft{text-align: left!important;}
 .btnBox{display: flex; gap: 0 5px;}
 .btn{display: inline-block; padding: 7px 20px; background-color: #4253ab; color: #fff; border-radius: 5px;}
-.contentWrap{padding: 100px 0;}
+button:disabled{cursor: auto; background-color: #e3e3e3;}
 
 /* 공통 - 제목 */
 .contentWrap h1{margin: 30px 0 90px; text-align: center;}
@@ -359,6 +359,7 @@
 .loginWrap .inputRadioWrap .inputRadioBox input{margin-top: 2px;}
 .loginWrap .inputRadioWrap .inputRadioBox label{margin: 0; cursor: pointer;}
 .loginWrap p{margin-top: 20px;}
+.loginWrap .errorMessage{margin-top: 7px; color: #f91414; font-size: 14px;}
 
 @media (max-width: 1024px){
 
