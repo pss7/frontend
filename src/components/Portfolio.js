@@ -70,6 +70,30 @@ export default function Portfolio() {
                 </div>
               </Link>
             </li>
+            <li>
+              <Link to="#" target="_blank">
+                <div className="imgWrap">
+                  <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    쇼핑몰
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="#" target="_blank">
+                <div className="imgWrap">
+                  <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    쇼핑몰
+                  </h3>
+                </div>
+              </Link>
+            </li>
           </ul>
           <div className="textEffect textEffect01" >
             <p> FRONTENDPORTFOLIO </p>
