@@ -61,72 +61,75 @@ export default function SignIn() {
             <div className="container">
                 <div className="contentBox">
 
-                    <div className="loginWrap signinWrap">
-                        <h1>로그인</h1>
+                    <div className="loginWrap">
+                        <div className="signinBox">
+                            <h1>로그인</h1>
 
-                        <form onSubmit={handleLogin}>
+                            <form onSubmit={handleLogin}>
 
-                            <div className="box">
-                                <label htmlFor="email">
-                                    이메일
-                                </label>
-                                <input
-                                    id="email"
-                                    type="text"
-                                    value={email}
-                                    onChange={handelEmail}
-                                />
+                                <div className="box">
+                                    <label htmlFor="email">
+                                        이메일
+                                    </label>
+                                    <input
+                                        id="email"
+                                        type="text"
+                                        value={email}
+                                        onChange={handelEmail}
+                                    />
 
-                                {
-                                    !emailCheck && email.length > 0 && (
-                                        <p className="errorMessage">
-                                            올바른 이메일 형식이 아닙니다.
-                                        </p>
-                                    )
-                                }
-                            </div>
+                                    {
+                                        !emailCheck && email.length > 0 && (
+                                            <p className="errorMessage">
+                                                올바른 이메일 형식이 아닙니다.
+                                            </p>
+                                        )
+                                    }
+                                </div>
 
-                            <div className="box">
-                                <label htmlFor="password">
-                                    비밀번호
-                                </label>
-                                <input
-                                    id="password"
-                                    type="password"
-                                    value={password}
-                                    onChange={handlePassword}
-                                />
-                                {/* {
+                                <div className="box">
+                                    <label htmlFor="password">
+                                        비밀번호
+                                    </label>
+                                    <input
+                                        id="password"
+                                        type="password"
+                                        value={password}
+                                        onChange={handlePassword}
+                                    />
+                                    {/* {
                                     password && password.length === 0 && (
                                         <p className="errorMessage">
                                             비밀빈호를 입력해주세요.
                                         </p>
                                     )
                                 } */}
-                                {
-                                    !passwordCheck && password.length > 0 && (
-                                        <p className="errorMessage">
-                                            비밀번호를 정확하게 입력해주세요.
-                                        </p>
-                                    )
-                                }
-                            </div>
-                            <ul className="loginLinkWrap">
-                                <li>
-                                    <Link to="#">아이디/비밀번호 찾기</Link>
-                                </li>
-                                <li>
-                                    <Link to="/signup">회원가입</Link>
-                                </li>
-                            </ul>
+                                    {
+                                        !passwordCheck && password.length > 0 && (
+                                            <p className="errorMessage">
+                                                비밀번호를 정확하게 입력해주세요.
+                                            </p>
+                                        )
+                                    }
+                                </div>
+                                <ul className="loginLinkWrap">
+                                    <li>
+                                        <Link to="#">아이디/비밀번호 찾기</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/signup">회원가입</Link>
+                                    </li>
+                                </ul>
 
-                            <button type="submit" className="btn" disabled={!valid}>
-                                로그인
-                            </button>
+                                <button type="submit" className="btn" disabled={!valid}>
+                                    로그인
+                                </button>
 
-                        </form>
+                            </form>
 
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

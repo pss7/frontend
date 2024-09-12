@@ -370,4 +370,4 @@ button:disabled{cursor: auto; background-color: #e3e3e3;}
 }
 
 /* 로그아웃 */
-.signoutWrap a{display: block; font-weight: 500; text-align: center; font-size: 18px;}
+.signoutBox a{display: block; font-weight: 500; text-align: center; font-size: 18px;}

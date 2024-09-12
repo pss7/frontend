@@ -70,86 +70,89 @@ export default function SignUp() {
             <div className="container">
                 <div className="contentBox">
 
-                    <div className="loginWrap signupWrap">
+                    <div className="loginWrap">
+                        <div className="signupBox">
 
-                        <h1>회원가입</h1>
+                            <h1>회원가입</h1>
 
-                        <form onSubmit={handleSingup}>
+                            <form onSubmit={handleSingup}>
 
-                            <div className="box">
-                                <label>
-                                    이름
-                                </label>
-                                <input
-                                    type="text"
-                                    onChange={(e) =>
-                                        setName(e.target.value)
+                                <div className="box">
+                                    <label>
+                                        이름
+                                    </label>
+                                    <input
+                                        type="text"
+                                        onChange={(e) =>
+                                            setName(e.target.value)
+                                        }
+                                    />
+                                </div>
+
+                                <div className="box">
+                                    <label>
+                                        이메일
+                                    </label>
+                                    <input
+                                        type="text"
+                                        onChange={handelEmail}
+                                    />
+                                    {
+                                        !emailCheck && email.length > 0 && (
+                                            <p className="errorMessage">
+                                                올바른 이메일 형식이 아닙니다.
+                                            </p>
+                                        )
                                     }
-                                />
-                            </div>
+                                </div>
 
-                            <div className="box">
-                                <label>
-                                    이메일
-                                </label>
-                                <input
-                                    type="text"
-                                    onChange={handelEmail}
-                                />
-                                {
-                                    !emailCheck && email.length > 0 && (
-                                        <p className="errorMessage">
-                                            올바른 이메일 형식이 아닙니다.
-                                        </p>
-                                    )
-                                }
-                            </div>
+                                <div className="box">
+                                    <label>
+                                        비밀번호
+                                    </label>
+                                    <input
+                                        type="password"
+                                        onChange={handlePassword}
+                                    />
+                                    {
+                                        !passwordCheck && password.length > 0 && (
+                                            <p className="errorMessage">
+                                                비밀번호를 정확하게 입력해주세요.
+                                            </p>
+                                        )
+                                    }
 
-                            <div className="box">
-                                <label>
-                                    비밀번호
-                                </label>
-                                <input
-                                    type="password"
-                                    onChange={handlePassword}
-                                />
-                                {
-                                    !passwordCheck && password.length > 0 && (
-                                        <p className="errorMessage">
-                                            비밀번호를 정확하게 입력해주세요.
-                                        </p>
-                                    )
-                                }
+                                </div>
 
-                            </div>
+                                <div className="box">
+                                    <label>
+                                        비밀번호 확인
+                                    </label>
+                                    <input
+                                        type="password"
+                                        onChange={(e) => {
+                                            setPasswordConfirm(e.target.value);
+                                        }}
+                                    />
+                                    {
+                                        password !== passwordConfirm && passwordConfirm.length > 0 && (
+                                            <p className="errorMessage">
+                                                비밀번호가 일치하지 않습니다.
+                                            </p>
+                                        )
+                                    }
 
-                            <div className="box">
-                                <label>
-                                    비밀번호 확인
-                                </label>
-                                <input
-                                    type="password"
-                                    onChange={(e) => {
-                                        setPasswordConfirm(e.target.value);
-                                    }}
-                                />
-                                {
-                                    password !== passwordConfirm && passwordConfirm.length > 0 && (
-                                        <p className="errorMessage">
-                                            비밀번호가 일치하지 않습니다.
-                                        </p>
-                                    )
-                                }
+                                </div>
 
-                            </div>
+                                <button type="submit" className="btn" disabled={!valid}>
+                                    회원가입
+                                </button>
 
-                            <button type="submit" className="btn" disabled={!valid}>
-                                회원가입
-                            </button>
+                            </form>
 
-                        </form>
-
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
