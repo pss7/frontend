@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function SignIn() {
 
     const navigate = useNavigate();
 
@@ -61,7 +61,7 @@ export default function Login() {
             <div className="container">
                 <div className="contentBox">
 
-                    <div className="loginWrap">
+                    <div className="loginWrap signinWrap">
                         <h1>로그인</h1>
 
                         <form onSubmit={handleLogin}>

@@ -1,4 +1,4 @@
-import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import "./assets/css/fonts.css";
 import "./assets/css/reset.css";
@@ -14,6 +14,7 @@ import SearchPage from "./components/SearchPage";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import { useEffect, useState } from "react";
+import SignOut from "./components/SignOut";
 
 function App() {
 
@@ -37,8 +38,9 @@ function App() {
         <Route path='/search' element={<Search />} />
         <Route path='/searchpage/:searchId' element={<SearchPage />} />
         
-        <Route path='/signin' element={<SignIn />} />
+        <Route path="/signin" element={loginStatus ? <Navigate to={"/signout"} /> : <SignIn />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/signout' element={<SignOut />} />
       </Routes>
     </HashRouter >
   );

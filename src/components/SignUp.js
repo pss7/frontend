@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Register() {
+export default function SignUp() {
 
     const navigate = useNavigate();
 
@@ -70,7 +70,7 @@ export default function Register() {
             <div className="container">
                 <div className="contentBox">
 
-                    <div className="loginWrap">
+                    <div className="loginWrap signupWrap">
 
                         <h1>회원가입</h1>
 

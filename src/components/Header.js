@@ -26,7 +26,7 @@ export default function Header() {
             duration: 900,
             delay: 0,
             smooth: 'easeOut',
-            offset: -50
+            offset: -49
         });
     };
 
