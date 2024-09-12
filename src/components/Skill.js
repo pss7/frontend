@@ -104,19 +104,6 @@ export default function Skill() {
                                 </p>
                             </div>
                         </li>
-                        <li>
-                            <div className="imgWrap">
-                                <img src={process.env.PUBLIC_URL + '/images/node.png'} alt="Node" />
-                            </div>
-                            <div className="textWrap">
-                                <h3>
-                                    Node
-                                </h3>
-                                <p>
-                                    Node
-                                </p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
