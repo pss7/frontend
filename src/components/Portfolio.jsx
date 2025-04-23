@@ -59,7 +59,7 @@ export default function Portfolio() {
               </Link>
             </li>
             <li>
-              <Link to="https://brip-eoqk.vercel.app/" target="_blank">
+              <Link to="https://brip.vercel.app/" target="_blank">
                 <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/img04.jpg'} alt="" />
                 </div>
