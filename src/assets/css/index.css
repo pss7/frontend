@@ -171,12 +171,12 @@ button:disabled{cursor: auto; background-color: #e3e3e3;}
 #section03 .portfolioTop .textWrap .text01{margin-bottom: 30px;}
 #section03 .portfolioTop .textWrap .text02{font-size: 22px; font-weight: 400;}
 #section03 .portfolioTop::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; /*background-color: rgba(66, 83, 171, .8);*/ background-color: rgba(0,0,0,.7); z-index: 9;}
-#section03 .portfolioList{display: flex; flex-wrap: wrap; gap: 0 6.66%;}
-#section03 .portfolioList li{width: 20%; margin-bottom: 6.66%; box-shadow: 3px 3px 13px rgba(0, 0, 0, .2); border-radius: 10px; overflow: hidden;}
+#section03 .portfolioList{display: flex; flex-wrap: wrap; gap: 0 5%;}
+#section03 .portfolioList li{width: 21.25%; margin-bottom: 6.66%; box-shadow: 3px 3px 13px rgba(0, 0, 0, .2); border-radius: 10px; overflow: hidden;}
 #section03 .portfolioList li a{display: block;}
 #section03 .portfolioList li a:hover img{transform: scale(1.2);}
-#section03 .portfolioList li a .imgWrap{overflow: hidden;}
-#section03 .portfolioList li img{display: block; width: 100%; transition: all .5s;}
+#section03 .portfolioList li a .imgBox{height: 300px; overflow: hidden; background-color: #ddd;}
+#section03 .portfolioList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; margin: auto; transition: all .5s;}
 #section03 .portfolioList li .textWrap{padding: 0 20px; display: flex; align-items: center; justify-content: center; height: 60px;}
 #section03 .portfolioList li .textWrap h3{font-size: 16px;}
 
@@ -247,7 +247,7 @@ button:disabled{cursor: auto; background-color: #e3e3e3;}
 
 }
 
-@media (max-width: 414px){
+@media (max-width: 576px){
 
   #section03 .portfolioList li{width: 100%; margin-bottom: 18%;}
   #section03 .portfolioList li:last-child{margin-bottom: 0;}

@@ -23,8 +23,56 @@ export default function Portfolio() {
           </h2>
           <ul className="portfolioList" data-aos="fade-up">
             <li>
+              <Link to="https://rolling-three.vercel.app/" target="_blank">
+                <div className="imgBox">
+                  <img src={process.env.PUBLIC_URL + '/images/img01.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    코드잇 프로젝트 - 롤링
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://the-julge-team6.vercel.app/" target="_blank">
+                <div className="imgBox">
+                  <img src={process.env.PUBLIC_URL + '/images/img02.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    코드잇 프로젝트 - 더 줄게
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://dailyepigram.vercel.app/" target="_blank">
+                <div className="imgBox">
+                  <img src={process.env.PUBLIC_URL + '/images/img03.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    코드잇 프로젝트 - 에피그램
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://brip-eoqk.vercel.app/" target="_blank">
+                <div className="imgBox">
+                  <img src={process.env.PUBLIC_URL + '/images/img04.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    BRIP
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            {/* <li>
               <Link to="/boardlist" target="_blank">
-                <div className="imgWrap">
+                <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>
                 <div className="textWrap">
@@ -36,7 +84,7 @@ export default function Portfolio() {
             </li>
             <li>
               <Link to="/search" target="_blank">
-                <div className="imgWrap">
+                <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>
                 <div className="textWrap">
@@ -48,7 +96,7 @@ export default function Portfolio() {
             </li>
             <li>
               <Link to="/signin" target="_blank">
-                <div className="imgWrap">
+                <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>
                 <div className="textWrap">
@@ -60,7 +108,7 @@ export default function Portfolio() {
             </li>
             <li>
               <Link to="#" target="_blank">
-                <div className="imgWrap">
+                <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/mainimg.jpg'} alt="" />
                 </div>
                 <div className="textWrap">
@@ -69,7 +117,7 @@ export default function Portfolio() {
                   </h3>
                 </div>
               </Link>
-            </li>
+            </li> */}
           </ul>
           <div className="textEffect textEffect01" >
             <p> FRONTENDPORTFOLIO </p>
