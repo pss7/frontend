@@ -45,7 +45,7 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "homepage": ".",
+  "homepage": "https://pss7.github.io/frontend/",
   "description": "",
   "main": "index.js",
   "keywords": [],
