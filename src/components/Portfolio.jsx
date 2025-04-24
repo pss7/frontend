@@ -58,18 +58,6 @@ export default function Portfolio() {
                 </div>
               </Link>
             </li>
-            <li>
-              <Link to="https://brip.vercel.app/" target="_blank">
-                <div className="imgBox">
-                  <img src={process.env.PUBLIC_URL + '/images/img04.jpg'} alt="" />
-                </div>
-                <div className="textWrap">
-                  <h3>
-                    BRIP
-                  </h3>
-                </div>
-              </Link>
-            </li>
             {/* <li>
               <Link to="/boardlist" target="_blank">
                 <div className="imgBox">
