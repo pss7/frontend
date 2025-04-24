@@ -46,7 +46,7 @@ export default function Portfolio() {
                 </div>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="https://dailyepigram.vercel.app/" target="_blank">
                 <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/img03.jpg'} alt="" />
@@ -57,7 +57,7 @@ export default function Portfolio() {
                   </h3>
                 </div>
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link to="/boardlist" target="_blank">
                 <div className="imgBox">
