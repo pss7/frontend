@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.6fcbd584.css",
-    "main.js": "./static/js/main.896ab9a0.js",
-    "static/media/NotoSansKR-Bold.otf": "./static/media/NotoSansKR-Bold.d70da461aee08ea5e329.otf",
-    "static/media/NotoSansKR-Medium.otf": "./static/media/NotoSansKR-Medium.c452ab96b83fd2ce5ae8.otf",
-    "static/media/NotoSansKR-Regular.otf": "./static/media/NotoSansKR-Regular.6a30564cbf88a461ba2b.otf",
-    "static/media/NotoSansKR-Bold.woff": "./static/media/NotoSansKR-Bold.cdc21ec1a4fa0f11ecf0.woff",
-    "static/media/NotoSansKR-Medium.woff": "./static/media/NotoSansKR-Medium.9d8f91304460b340a09a.woff",
-    "static/media/NotoSansKR-Regular.woff": "./static/media/NotoSansKR-Regular.ecf7c76ba0b6bb45527f.woff",
-    "static/media/NotoSansKR-Bold.woff2": "./static/media/NotoSansKR-Bold.8b8bc0e928b48f3a927a.woff2",
-    "static/media/NotoSansKR-Medium.woff2": "./static/media/NotoSansKR-Medium.3c49ca4f9c1a1b5a7dc0.woff2",
-    "static/media/NotoSansKR-Regular.woff2": "./static/media/NotoSansKR-Regular.b1db0fdc3a40f3da4051.woff2",
-    "static/media/tit_bg.jpg": "./static/media/tit_bg.3a93526eb608425501d8.jpg",
-    "index.html": "./index.html",
-    "main.6fcbd584.css.map": "./static/css/main.6fcbd584.css.map",
-    "main.896ab9a0.js.map": "./static/js/main.896ab9a0.js.map"
+    "main.css": "/frontend/static/css/main.214ffb5c.css",
+    "main.js": "/frontend/static/js/main.bf50b9a3.js",
+    "static/media/NotoSansKR-Bold.otf": "/frontend/static/media/NotoSansKR-Bold.d70da461aee08ea5e329.otf",
+    "static/media/NotoSansKR-Medium.otf": "/frontend/static/media/NotoSansKR-Medium.c452ab96b83fd2ce5ae8.otf",
+    "static/media/NotoSansKR-Regular.otf": "/frontend/static/media/NotoSansKR-Regular.6a30564cbf88a461ba2b.otf",
+    "static/media/NotoSansKR-Bold.woff": "/frontend/static/media/NotoSansKR-Bold.cdc21ec1a4fa0f11ecf0.woff",
+    "static/media/NotoSansKR-Medium.woff": "/frontend/static/media/NotoSansKR-Medium.9d8f91304460b340a09a.woff",
+    "static/media/NotoSansKR-Regular.woff": "/frontend/static/media/NotoSansKR-Regular.ecf7c76ba0b6bb45527f.woff",
+    "static/media/NotoSansKR-Bold.woff2": "/frontend/static/media/NotoSansKR-Bold.8b8bc0e928b48f3a927a.woff2",
+    "static/media/NotoSansKR-Medium.woff2": "/frontend/static/media/NotoSansKR-Medium.3c49ca4f9c1a1b5a7dc0.woff2",
+    "static/media/NotoSansKR-Regular.woff2": "/frontend/static/media/NotoSansKR-Regular.b1db0fdc3a40f3da4051.woff2",
+    "static/media/tit_bg.jpg": "/frontend/static/media/tit_bg.3a93526eb608425501d8.jpg",
+    "index.html": "/frontend/index.html",
+    "main.214ffb5c.css.map": "/frontend/static/css/main.214ffb5c.css.map",
+    "main.bf50b9a3.js.map": "/frontend/static/js/main.bf50b9a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fcbd584.css",
-    "static/js/main.896ab9a0.js"
+    "static/css/main.214ffb5c.css",
+    "static/js/main.bf50b9a3.js"
   ]
 }
