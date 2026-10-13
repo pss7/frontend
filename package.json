@@ -7,7 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:gh": "PUBLIC_URL=https://pss7.github.io/frontend react-scripts build",
+    "build:gh": "cross-env PUBLIC_URL=https://pss7.github.io/frontend react-scripts build",
     "predeploy": "npm run build:gh",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
