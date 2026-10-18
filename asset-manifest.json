@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://pss7.github.io/frontend/static/css/main.d2a7cd1e.css",
-    "main.js": "https://pss7.github.io/frontend/static/js/main.ca332f67.js",
+    "main.css": "https://pss7.github.io/frontend/static/css/main.28ee78e1.css",
+    "main.js": "https://pss7.github.io/frontend/static/js/main.50606ec2.js",
     "static/media/NotoSansKR-Bold.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Bold.d70da461aee08ea5e329.otf",
     "static/media/NotoSansKR-Medium.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Medium.c452ab96b83fd2ce5ae8.otf",
     "static/media/NotoSansKR-Regular.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Regular.6a30564cbf88a461ba2b.otf",
@@ -11,13 +11,13 @@
     "static/media/NotoSansKR-Bold.woff2": "https://pss7.github.io/frontend/static/media/NotoSansKR-Bold.8b8bc0e928b48f3a927a.woff2",
     "static/media/NotoSansKR-Medium.woff2": "https://pss7.github.io/frontend/static/media/NotoSansKR-Medium.3c49ca4f9c1a1b5a7dc0.woff2",
     "static/media/NotoSansKR-Regular.woff2": "https://pss7.github.io/frontend/static/media/NotoSansKR-Regular.b1db0fdc3a40f3da4051.woff2",
-    "static/media/tit_bg.jpg": "https://pss7.github.io/frontend/static/media/tit_bg.3a93526eb608425501d8.jpg",
+    "static/media/img.jpg": "https://pss7.github.io/frontend/static/media/img.3a93526eb608425501d8.jpg",
     "index.html": "https://pss7.github.io/frontend/index.html",
-    "main.d2a7cd1e.css.map": "https://pss7.github.io/frontend/static/css/main.d2a7cd1e.css.map",
-    "main.ca332f67.js.map": "https://pss7.github.io/frontend/static/js/main.ca332f67.js.map"
+    "main.28ee78e1.css.map": "https://pss7.github.io/frontend/static/css/main.28ee78e1.css.map",
+    "main.50606ec2.js.map": "https://pss7.github.io/frontend/static/js/main.50606ec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2a7cd1e.css",
-    "static/js/main.ca332f67.js"
+    "static/css/main.28ee78e1.css",
+    "static/js/main.50606ec2.js"
   ]
 }
