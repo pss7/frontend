@@ -23,6 +23,18 @@ export default function Portfolio() {
           </h2>
           <ul className="portfolioList" data-aos="fade-up">
             <li>
+              <Link to="https://pss7.github.io/link-shop/" target="_blank">
+                <div className="imgBox">
+                  <img src={process.env.PUBLIC_URL + '/images/link_shop.jpg'} alt="" />
+                </div>
+                <div className="textWrap">
+                  <h3>
+                    코드잇 프로젝트 - 링크샵
+                  </h3>
+                </div>
+              </Link>
+            </li>
+            <li>
               <Link to="https://rolling-three.vercel.app/" target="_blank">
                 <div className="imgBox">
                   <img src={process.env.PUBLIC_URL + '/images/img01.jpg'} alt="" />
