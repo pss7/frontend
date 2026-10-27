@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://pss7.github.io/frontend/static/css/main.28ee78e1.css",
-    "main.js": "https://pss7.github.io/frontend/static/js/main.50606ec2.js",
+    "main.js": "https://pss7.github.io/frontend/static/js/main.d44f4aa7.js",
     "static/media/NotoSansKR-Bold.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Bold.d70da461aee08ea5e329.otf",
     "static/media/NotoSansKR-Medium.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Medium.c452ab96b83fd2ce5ae8.otf",
     "static/media/NotoSansKR-Regular.otf": "https://pss7.github.io/frontend/static/media/NotoSansKR-Regular.6a30564cbf88a461ba2b.otf",
@@ -14,10 +14,10 @@
     "static/media/img.jpg": "https://pss7.github.io/frontend/static/media/img.3a93526eb608425501d8.jpg",
     "index.html": "https://pss7.github.io/frontend/index.html",
     "main.28ee78e1.css.map": "https://pss7.github.io/frontend/static/css/main.28ee78e1.css.map",
-    "main.50606ec2.js.map": "https://pss7.github.io/frontend/static/js/main.50606ec2.js.map"
+    "main.d44f4aa7.js.map": "https://pss7.github.io/frontend/static/js/main.d44f4aa7.js.map"
   },
   "entrypoints": [
     "static/css/main.28ee78e1.css",
-    "static/js/main.50606ec2.js"
+    "static/js/main.d44f4aa7.js"
   ]
 }
